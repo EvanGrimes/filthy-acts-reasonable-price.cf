@@ -88,14 +88,14 @@ body {
   <input type="text" id="myElt"  >
   <button type="button" onclick="changeSite()">Click Me!</button>
 
-  <div id="proxyFrame">
+  <div id="proxyDiv">
 
       <iframe id="proxyFrame" src="javascript:void(0)" width=100% height=100%></iframe></body></html>
 
   </div>
   
   <script>
-    
+    const proxy;
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -110,11 +110,10 @@ function getURL() {
 }
 function changeSite(){
   getURL();
-  proxy.style.visibility = "visible"; 
+  document.getElementById("proxyDiv").style.visibility = "visible"; 
 }
 function init(){
-  const proxy = document.getElementById("proxyFrame");
-  proxy.style.visibility = "hidden"; 
+  document.getElementById("proxyDiv").style.visibility = "hidden"; 
 }
 </script>
 

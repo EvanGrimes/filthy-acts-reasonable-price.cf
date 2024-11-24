@@ -108,15 +108,15 @@ function closeNav() {
 
 function getURL(newURL) {
     newURL = document.getElementById("myElt").value;
-   
+    console.log(newURL);
     return newURL;
 }
 function changeSite(){
   getURL(siteURL);
-  document.getElementByID("proxyFrame").style.visibility="visible"; 
+  document.getElementByID("proxyFrame").style.visibility =" visible"; 
 }
 function init(){
-  document.getElementByID("proxyFrame").style.visibility="hidden"; 
+  document.getElementByID("proxyFrame").style.visibility = "hidden"; 
 }
 </script>
 

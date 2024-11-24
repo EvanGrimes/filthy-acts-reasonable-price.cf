@@ -95,6 +95,7 @@ body {
   </div>
   
   <script>
+    const baseURL = "https://www.";
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -105,7 +106,8 @@ function closeNav() {
 
 
 function getURL() {
-    document.getElementById("proxyFrame").src = document.getElementById("myElt").value;
+
+    document.getElementById("proxyFrame").src = "baseURL+document.getElementById("myElt").value";
 }
 function changeSite(){
   getURL();

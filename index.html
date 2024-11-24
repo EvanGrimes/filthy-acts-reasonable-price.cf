@@ -90,12 +90,11 @@ body {
 
   <div id="proxyFrame">
 
-      <iframe src="getURL()" width=100% height=100%></iframe></body></html>
+      <iframe id="proxyFrame" src="javascript:void(0)" width=100% height=100%></iframe></body></html>
 
   </div>
   
   <script>
-    var siteURL;
     
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -106,13 +105,11 @@ function closeNav() {
 }
 
 
-function getURL(newURL) {
-    newURL = document.getElementById("myElt").value;
-    console.log(newURL);
-    return newURL;
+function getURL() {
+    document.getElementById("proxyFrame").src = document.getElementById("myElt").value;
 }
 function changeSite(){
-  getURL(siteURL);
+  getURL();
   proxy.style.visibility = "visible"; 
 }
 function init(){

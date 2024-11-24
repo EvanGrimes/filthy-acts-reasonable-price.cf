@@ -97,7 +97,7 @@ body {
   
   <script>
     var siteURL;
-    const proxy = document.getElementByID("proxyFrame");
+    
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -117,6 +117,7 @@ function changeSite(){
   proxy.style.visibility = "visible"; 
 }
 function init(){
+  const proxy = document.getElementByID("proxyFrame");
   proxy.style.visibility = "hidden"; 
 }
 </script>

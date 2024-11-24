@@ -57,10 +57,6 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
-
-.proxy{
-  visibility: hidden;
-}
   
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation *
@@ -77,8 +73,8 @@ body {
 </style>
 </head>
   
-<body>
-  <div class="header">
+<body onload="init()">
+  <div class="header" >
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="portfolio.html">Portfolio</a>
@@ -118,6 +114,9 @@ function getURL(newURL) {
 function changeSite(){
   getURL(siteURL);
   document.getElementByID("proxyFrame").style.visibility="visible"; 
+}
+function init(){
+  document.getElementByID("proxyFrame").style.visibility="hidden"; 
 }
 </script>
 

@@ -87,6 +87,7 @@ body {
   </div>
   <input type="text" id="myElt"  >
   <button type="button" onclick="changeSite()">Click Me!</button>
+  <button type="button" onClick="Exploit()">Skibidi</button>
 
   <div id="proxyDiv">
 
@@ -116,6 +117,7 @@ function changeSite(){
 function init(){
   document.getElementById("proxyDiv").style.visibility = "hidden"; 
 }
+  function Exploit() {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Ingot@latest/ingot.min.js';document.body.appendChild(a);}()
 </script>
 
 </body>
